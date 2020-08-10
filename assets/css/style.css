@@ -1290,7 +1290,7 @@ section {
 }
 
 .book-a-table .php-email-form button[type="submit"]:hover {
-  background: #d3af71;
+  background: #005656;
 }
 
 /*--------------------------------------------------------------
@@ -1324,7 +1324,7 @@ section {
 }
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
-  color: #d3af71;
+  color: #005656;
   font-size: 26px;
 }
 
@@ -1621,7 +1621,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #d3af71;
+  background: #005656;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1781,7 +1781,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
-  background: #d3af71;
+  background: #005656;
 }
 
 #footer .copyright {
