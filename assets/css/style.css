@@ -593,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(205, 164, 94, 0.7);
+  border: 5px solid rgba(146, 195, 48, 0.7);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
