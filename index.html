@@ -120,47 +120,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-lara" class="why-us">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Why Me</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Passion</h4>
-              <p>Tattooing is the most important thing in my life, and the thing that gives me livelihood, so it’s important to me that my clients are over the moon with their pieces. From consulting to application, I treat all parts of the process like a collaboration where I can combine my passion/skills with my clients ideas.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Inclusivity</h4>
-              <p> I think that all tattoos are cool tattoos; if it’s something you like enough to put on yourself, then it’s something I would be happy to do, as long as it’s not hateful or hurtful.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4>Adept in multiple styles</h4>
-              <p>With a background in handpoking, I’m able to do multiple methods of tattooing if you were curious/keen.</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-   
-
+  
     <!-- ======= Events Section ======= -->
     <section id="services" class="events">
       <div class="container" data-aos="fade-up">
@@ -260,6 +220,48 @@
 
       </div>
     </section><!-- End Gallery Section -->
+	  
+	    <!-- ======= Why Me Section ======= -->
+    <section id="why-lara" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Me</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Passion</h4>
+              <p>Tattooing is the most important thing in my life, and the thing that gives me livelihood, so it’s important to me that my clients are over the moon with their pieces. From consulting to application, I treat all parts of the process like a collaboration where I can combine my passion/skills with my clients ideas.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Inclusivity</h4>
+              <p> I think that all tattoos are cool tattoos; if it’s something you like enough to put on yourself, then it’s something I would be happy to do, as long as it’s not hateful or hurtful.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4>Adept in multiple styles</h4>
+              <p>With a background in handpoking, I’m able to do multiple methods of tattooing if you were curious/keen.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+   
+
 
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
@@ -433,13 +435,13 @@
               <div class="email">
                 <i class="icofont-envelope"></i>
                 <h4>Email:</h4>
-                <p>laruh.draws@gmail.com</p>
+                <p><a href="mailto:laruh.draws@gmail.com">laruh.draws@gmail.com</a></p>
               </div>
 
               <div class="phone">
                 <i class="icofont-instagram"></i>
                 <h4>DM:</h4>
-                <p>@Lar.Uh</p>
+                <p><a href="https://www.instagram.com/lar.uh/">@lar.uh</a></p>
               </div>
 
             </div>
@@ -449,30 +451,63 @@
           <div class="col-lg-8 mt-5 mt-lg-0">
 
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
+              
+					<div class="form-group">
+                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Full Name" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+				
+					<div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Email Address" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
+              </div>
+				
+					<div class="form-group">
+                <input type="text" class="form-control" name="pronoun" id="pronoun" placeholder="Preferred Pronoun" data-rule="minlen:1" data-msg="Please enter your preferred pronoun" />
+                <div class="validate"></div>
+              </div>
+				
+				<div class="form-group">
+                <textarea class="form-control" name="customdescription" rows="2" data-rule="required" data-msg="Custom or Flash? If custom, please included a description of your desired piece" placeholder="If custom, please included a description of your desired piece"></textarea>
+                <div class="validate"></div>
+              </div>
+				
+				<div class="form-group">
+                <textarea class="form-control" name="placement" rows="1" data-rule="placement" data-msg="Placement (including right or left side of body)" placeholder="Placement (including right or left side of body)"></textarea>
+                <div class="validate"></div>
+              </div>
+				
+				<div class="form-group">
+                <textarea class="form-control" name="size" rows="1" data-rule="required" data-msg="Approx. size (inches or cm)" placeholder="Approx. size (inches or cm)"></textarea>
+                <div class="validate"></div>
+              </div>
+				
+				<div class="form-group">
+                <textarea class="form-control" name="question" rows="3" data-rule="required" data-msg="Any questions for me?" placeholder="Any questions for me?"></textarea>
+                <div class="validate"></div>
+              </div>
+				
+				
+				<div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <input type="text" name="name" class="form-control" id="pronoun" placeholder="Are you 18+? (type yes or no)" data-rule="minlen:1" data-msg="Are you 18+? (type yes or no)" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                  <input type="email" class="form-control" name="email" id="email" placeholder="I accept there is a $50 deposit (type yes)" data-rule="email" data-msg="Please confirm you are aware a $50 deposit will be required" />
                   <div class="validate"></div>
                 </div>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="8" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
+              
+			
+              
+				<div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Submit</button></div>
+              
+				<div class="text-center"><button type="submit">Submit</button></div>
             </form>
 
           </div>
@@ -509,7 +544,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; 2021 <strong><span>Lar.uh</span></strong>. All Rights Reserved. Site designed by <strong><span>Caffeine &amp; Anxiety</span></strong>.
+        &copy; 2021 <strong><span>Lar.uh</span></strong>. All Rights Reserved. Site designed by <a href="https://www.michaelbroley.com" target="_blank">Michael Broley.</a>
       </div>
       
     </div>
