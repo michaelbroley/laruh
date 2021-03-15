@@ -591,7 +591,7 @@
 			  <p>Once I receive your appointment request, I will contact you with potential dates and e-transfer information for the deposit to secure your appointment.</p>
 			  
 
-            <form name="Laruh.ca Booking Submission" method="POST" role="form" data-netlify="true">
+            <form name="Laruh.ca Booking Submission" method="POST" role="form" data-netlify="true" data-netlify-recaptcha="true">
               
 					<div class="form-group">
                 <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Full Name" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
@@ -609,13 +609,20 @@
               </div>
 				
 				<div class="form-group">
-                <textarea class="form-control" name="customdescription" rows="2" data-rule="required" data-msg="Custom or Flash? If custom, please included a description of your desired piece" placeholder="Custom or Flash? If custom, please included a description of your desired piece"></textarea>
+                <textarea class="form-control" name="customdescription" rows="3" data-rule="required" data-msg="Custom or Flash? If custom, please include a description of your desired piece and attach any references below. If flash, screenshot and circle the design you'd like to claim" placeholder="Custom or Flash? If custom, please include a description of your desired piece and attach any references below. If flash, screenshot and circle the design you'd like to claim"></textarea>
                 <div class="validate"></div>
               </div>
 				
 				<div class="form-row">
 				<label>Attach Image: <input type="file" name="picture" /></label>
 				</div>
+				
+				
+				<div class="form-group">
+                <textarea class="form-control" name="availablity" rows="1" data-rule="required" data-msg="What is your general availability?" placeholder="What is your general availability?"></textarea>
+                <div class="validate"></div>
+              </div>
+				
 				
 				<div class="form-group">
                 <textarea class="form-control" name="placement" rows="1" data-rule="placement" data-msg="Placement (including right or left side of body)" placeholder="Placement (including right or left side of body)"></textarea>
@@ -635,16 +642,16 @@
 				
 				<div class="form-row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="18+" class="form-control" id="18+" placeholder="Are you 18+? (type yes or no)" data-rule="minlen:1" data-msg="Are you 18+? (type yes or no)" />
+                  <input type="text" name="18+" class="form-control" id="18+" placeholder="Are you 18+? (yes/no)" data-rule="minlen:1" data-msg="Are you 18+? (yes/no))" />
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group">
-                  <input type="text" class="form-control" name="Deposit" id="deposit" placeholder="I accept there is a $50 deposit (type yes)" data-rule="email" data-msg="Please confirm you are aware a $50 deposit will be required" />
+                  <input type="text" class="form-control" name="Deposit" id="deposit" placeholder="I accept there is a $50 deposit (yes/no)" data-rule="email" data-msg="Please confirm you are aware a $50 deposit will be required" />
                   <div class="validate"></div>
                 </div>
               </div>
               
-	
+	 <div data-netlify-recaptcha="true"></div>
               
 				<div class="text-center"><button type="submit">Submit</button></div>
             </form>
