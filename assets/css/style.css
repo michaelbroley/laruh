@@ -528,6 +528,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
 }
 
+#gallery .btns {
+  margin-top: 30px;
+}
+
 #hero .btn-menu, #hero .btn-book {
   font-weight: 600;
   font-size: 13px;
@@ -542,7 +546,26 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid #8f0000;
 }
 
+#gallery .btn-menu, #hero .btn-book {
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: white;
+  border: 2px solid #8f0000;
+}
+
 #hero .btn-menu:hover, #hero .btn-book:hover {
+  background: #8f0000;
+  color: #fff;
+}
+
+#gallery .btn-menu:hover, #hero .btn-book:hover {
   background: #8f0000;
   color: #fff;
 }
